@@ -79,3 +79,21 @@
 @keyframes marquee-run{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 @media(prefers-reduced-motion:reduce){.motion-showcase *,.trust-marquee-track,.service-card-new,.steps-grid article{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 @media(max-width:700px){.hero-showcase.motion-showcase{height:350px;transform:scale(.78);transform-origin:top center;margin:0 -55px -72px}.motion-browser{left:5%;top:52px;width:80%;height:315px}.motion-code-card{right:0;top:38px;width:165px;padding:10px}.motion-score-card{left:0;bottom:40px;width:135px;padding:10px}.motion-approval{right:0;bottom:45px;padding:9px}.motion-site-art{right:0;transform:scale(.78);transform-origin:top right}.motion-site-body h2{font-size:29px}.motion-halo.halo-a{width:350px;height:350px}.motion-halo.halo-b{width:270px;height:360px}.showcase-caption{display:none}}
+
+/* Cinematic entrance inspired by the supplied Branfy reference */
+.intro-curtain{position:fixed;inset:0;z-index:9999;background:#0b0d14;display:flex;align-items:center;justify-content:center;flex-direction:column;overflow:hidden;animation:intro-curtain-exit 1.05s cubic-bezier(.76,0,.24,1) 1.48s forwards;pointer-events:none}
+.intro-curtain:after{content:"";position:absolute;left:-12%;right:-12%;height:17vh;bottom:-10vh;background:#0b0d14;border-radius:0 0 50% 50%;transform:scaleX(1.1);animation:intro-wave-up 1.05s cubic-bezier(.76,0,.24,1) 1.48s forwards}
+.intro-emblem{width:138px;height:138px;position:relative;display:grid;place-items:center;animation:intro-emblem-exit .55s ease 1.43s forwards}
+.intro-ring{position:absolute;inset:0;border:3px solid transparent;border-top-color:#c4f52b;border-right-color:#c4f52b;border-bottom-color:#c4f52b;border-left-color:#c4f52b;border-radius:50%;clip-path:inset(0 0 0 0);transform:rotate(-90deg);animation:intro-ring-draw 1.05s cubic-bezier(.2,.7,.2,1) both}
+.intro-disc{width:96px;height:96px;border-radius:50%;background:#f4f3ef;display:grid;place-items:center;box-shadow:0 0 0 1px #ffffff30,inset 0 2px 5px #00000012;animation:intro-disc-pop .65s cubic-bezier(.2,.9,.25,1) .18s both}
+.intro-letter{font-family:Manrope,sans-serif;font-size:58px;font-weight:800;line-height:1;color:#123c91;letter-spacing:-5px;transform:rotate(-8deg);text-shadow:0 2px 0 #b9d4ff}
+.intro-wordmark{position:absolute;top:calc(50% + 91px);font:800 10px Manrope,sans-serif;letter-spacing:4px;color:#dce6fa;opacity:0;animation:intro-wordmark-in .45s ease .55s forwards,intro-wordmark-out .25s ease 1.4s forwards}
+.intro-wordmark span{color:#c4f52b}
+@keyframes intro-ring-draw{0%{transform:rotate(-90deg) scale(.72);opacity:0}15%{opacity:1}100%{transform:rotate(270deg) scale(1);opacity:1}}
+@keyframes intro-disc-pop{0%{transform:scale(.45);opacity:0}70%{transform:scale(1.08);opacity:1}100%{transform:scale(1);opacity:1}}
+@keyframes intro-wordmark-in{to{opacity:.9;letter-spacing:5px}}
+@keyframes intro-wordmark-out{to{opacity:0;transform:translateY(-10px)}}
+@keyframes intro-emblem-exit{to{opacity:0;transform:translateY(-45px) scale(.78)}}
+@keyframes intro-wave-up{0%{transform:translateY(0) scaleX(1.1)}100%{transform:translateY(-115vh) scaleX(1.1)}}
+@keyframes intro-curtain-exit{0%{clip-path:inset(0 0 0 0)}100%{clip-path:inset(0 0 100% 0)}}
+@media(prefers-reduced-motion:reduce){.intro-curtain{display:none!important}}

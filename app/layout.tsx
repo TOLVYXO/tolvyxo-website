@@ -2,25 +2,27 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import IntroAnimation from "@/components/IntroAnimation";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://tolvyxo.eu"),
   title: {
-    default: "TOLVYXO — Digital Experiences That Move Business Forward",
+    default: "TOLVYXO — Создание современных сайтов для бизнеса",
     template: "%s | TOLVYXO"
   },
-  description: "TOLVYXO is a digital agency creating high-performing websites, thoughtful digital experiences and growth systems for ambitious businesses.",
+  description: "Создаём современные сайты для бизнеса. Вы оцениваете готовый результат и платите только после одобрения. Без предоплаты.",
   openGraph: {
-    title: "TOLVYXO — Design. Develop. Scale.",
-    description: "Custom websites built before payment. Review your website and pay only after you approve the result.",
+    title: "TOLVYXO — Сначала сайт. Потом оплата.",
+    description: "Разработка сайта без предоплаты. Сначала готовый результат, затем оплата после вашего одобрения.",
     type: "website"
   }
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en">
+    <html lang="ru">
       <body>
+        <IntroAnimation />
         <Header />
         <main>{children}</main>
         <Footer />

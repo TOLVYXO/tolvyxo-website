@@ -3,12 +3,12 @@ import SectionHeading from "@/components/SectionHeading";
 import ContactCTA from "@/components/ContactCTA";
 
 const services = [
-  ["01", "Web Development", "High-performing websites, built around your business goals.", "/services/web-development", "↗"],
-  ["02", "UI/UX Design", "Clear, intuitive experiences that make every interaction count.", "/services/ui-ux-design", "◈"],
-  ["03", "SEO & Growth", "Get discovered by the people already looking for what you offer.", "/services/seo", "⌁"],
-  ["04", "Digital Marketing", "Focused campaigns that turn attention into real enquiries.", "/services/digital-marketing", "◎"],
-  ["05", "Brand Identity", "A distinctive identity that makes your business memorable.", "/services/branding", "✳"],
-  ["06", "AI & Automation", "Smarter workflows that give your team time back.", "/services/ai-automation", "⌘"]
+  ["01", "Разработка сайтов", "Современные сайты, созданные под задачи вашего бизнеса.", "/services/web-development", "↗"],
+  ["02", "UI/UX-дизайн", "Понятный и удобный интерфейс для ваших клиентов.", "/services/ui-ux-design", "◈"],
+  ["03", "SEO и продвижение", "Помогаем клиентам находить ваш бизнес в поиске.", "/services/seo", "⌁"],
+  ["04", "Интернет-маркетинг", "Привлекаем внимание и превращаем его в заявки.", "/services/digital-marketing", "◎"],
+  ["05", "Фирменный стиль", "Создаём узнаваемый образ вашего бизнеса.", "/services/branding", "✳"],
+  ["06", "ИИ и автоматизация", "Упрощаем процессы и экономим время вашей команды.", "/services/ai-automation", "⌘"]
 ];
 
 export default function Home() {
@@ -17,60 +17,60 @@ export default function Home() {
       <div className="hero-grid" />
       <div className="container hero-new-grid">
         <div className="hero-copy-new">
-          <div className="eyebrow"><span className="status-dot"/> DIGITAL AGENCY FOR AMBITIOUS BUSINESSES</div>
-          <h1>Your next website.<br/><span className="gradient-text">Without the risk.</span></h1>
-          <p className="hero-lead">We design and build your website first. You review the finished result, and only pay when you’re happy with it.</p>
+          <div className="eyebrow"><span className="status-dot"/> ЦИФРОВОЕ АГЕНТСТВО ДЛЯ РАСТУЩЕГО БИЗНЕСА</div>
+          <h1>Ваш новый сайт.<br/><span className="gradient-text">Без риска.</span></h1>
+          <p className="hero-lead">Сначала мы создаём ваш сайт. Вы оцениваете готовый результат и платите только тогда, когда он вам нравится.</p>
           <div className="hero-actions">
-            <Link href="/contact" className="button button-primary">Start your free website <span>↗</span></Link>
-            <Link href="/services/web-development" className="text-link">See how it works <span>→</span></Link>
+            <Link href="/contact" className="button button-primary">Заказать сайт без предоплаты <span>↗</span></Link>
+            <Link href="/services/web-development" className="text-link">Как это работает <span>→</span></Link>
           </div>
           <div className="risk-points">
-            <span><i>✓</i> No upfront payment</span>
-            <span><i>✓</i> Review before you pay</span>
-            <span><i>✓</i> Your approval comes first</span>
+            <span><i>✓</i> Без предоплаты</span>
+            <span><i>✓</i> Сначала проверка — потом оплата</span>
+            <span><i>✓</i> Вы решаете, подходит ли результат</span>
           </div>
         </div>
         <div className="hero-showcase motion-showcase">
           <div className="motion-halo halo-a"></div><div className="motion-halo halo-b"></div>
           <div className="motion-browser browser-main">
-            <div className="motion-browser-bar"><div className="motion-dots"><i/><i/><i/></div><span>YOURBUSINESS.COM</span><b>↗</b></div>
+            <div className="motion-browser-bar"><div className="motion-dots"><i/><i/><i/></div><span>ВАШБИЗНЕС.ЕЕ</span><b>↗</b></div>
             <div className="motion-site">
-              <div className="motion-site-nav"><b>YOUR BRAND<span>.</span></b><div><i/><i/><i/></div><strong>LET’S TALK ↗</strong></div>
-              <div className="motion-site-body"><small>MADE FOR WHAT’S NEXT</small><h2>Make your<br/><em>business</em><br/>stand out.</h2><p>A clear message. A beautiful experience.<br/>A website built to move you forward.</p><span>DISCOVER MORE&nbsp; ↗</span></div>
+              <div className="motion-site-nav"><b>ВАШ БРЕНД<span>.</span></b><div><i/><i/><i/></div><strong>ОБСУДИТЬ ↗</strong></div>
+              <div className="motion-site-body"><small>СОЗДАНО ДЛЯ РОСТА</small><h2>Выделите<br/><em>свой бизнес</em><br/>среди других.</h2><p>Понятная подача. Удобный интерфейс.<br/>Сайт, который помогает развиваться.</p><span>УЗНАТЬ БОЛЬШЕ&nbsp; ↗</span></div>
               <div className="motion-site-art"><div className="motion-sphere"></div><div className="motion-art-card">01<br/><b>CREATE<br/>IMPACT.</b></div></div>
-              <div className="motion-site-footer"><span>DESIGN / DEVELOPMENT</span><span>SCROLL TO EXPLORE ↓</span></div>
+              <div className="motion-site-footer"><span>ДИЗАЙН / РАЗРАБОТКА</span><span>ЛИСТАЙТЕ ВНИЗ ↓</span></div>
             </div>
           </div>
           <div className="motion-code-card">
-            <div className="motion-card-head"><span><i/> LIVE PREVIEW</span><b>● BUILDING</b></div>
-            <div className="code-lines"><i><b>01</b><span><em>const</em> website = {'{'}</span></i><i><b>02</b><span> design: <strong>"made for you"</strong>,</span></i><i><b>03</b><span> performance: <strong>"optimised"</strong>,</span></i><i><b>04</b><span> experience: <strong>"effortless"</strong></span></i><i><b>05</b><span>{'}'}</span></i></div>
+            <div className="motion-card-head"><span><i/> ПРЕДПРОСМОТР</span><b>● СОЗДАЁТСЯ</b></div>
+            <div className="code-lines"><i><b>01</b><span><em>const</em> website = {'{'}</span></i><i><b>02</b><span> design: <strong>"для вашего бизнеса"</strong>,</span></i><i><b>03</b><span> performance: <strong>"оптимизировано"</strong>,</span></i><i><b>04</b><span> experience: <strong>"удобно"</strong></span></i><i><b>05</b><span>{'}'}</span></i></div>
             <div className="code-progress"><span></span></div>
           </div>
           <div className="motion-score-card">
-            <div className="score-top"><span>SEO PERFORMANCE</span><b>↗</b></div>
+            <div className="score-top"><span>ПОКАЗАТЕЛЬ SEO</span><b>↗</b></div>
             <div className="score-number"><strong className="count-up">98</strong><small>/100</small></div>
             <div className="score-bars"><i/><i/><i/><i/><i/><i/><i/><i/><i/><i/></div>
-            <small>READY TO GET DISCOVERED</small>
+            <small>ГОТОВ К ПРОДВИЖЕНИЮ</small>
           </div>
-          <div className="motion-approval"><span className="approval-check">✓</span><div><b>Ready for your review</b><small>Approve it. Then pay.</small></div><span className="approval-pulse"></span></div>
-          <div className="showcase-caption">DESIGN / DEVELOPMENT / GROWTH — 001</div>
+          <div className="motion-approval"><span className="approval-check">✓</span><div><b>Готово к проверке</b><small>Одобрите — затем оплатите.</small></div><span className="approval-pulse"></span></div>
+          <div className="showcase-caption">ДИЗАЙН / РАЗРАБОТКА / GROWTH — 001</div>
         </div>
       </div>
-      <div className="container hero-bottom"><span>SCROLL TO EXPLORE</span><span className="scroll-line"/></div>
+      <div className="container hero-bottom"><span>ПРОКРУТИТЕ ВНИЗ</span><span className="scroll-line"/></div>
     </section>
 
-    <section className="trust-strip"><div className="trust-marquee" aria-hidden="true"><div className="trust-marquee-track"><span>NO UPFRONT PAYMENT ✳ SEE IT BEFORE YOU BUY ✳ APPROVE IT, THEN PAY ✳ NO UPFRONT PAYMENT ✳ SEE IT BEFORE YOU BUY ✳ APPROVE IT, THEN PAY ✳</span><span>NO UPFRONT PAYMENT ✳ SEE IT BEFORE YOU BUY ✳ APPROVE IT, THEN PAY ✳ NO UPFRONT PAYMENT ✳ SEE IT BEFORE YOU BUY ✳ APPROVE IT, THEN PAY ✳</span></div></div><div className="container trust-strip-inner"><span>THE TOLVYXO PROMISE</span><b>No upfront payment.</b><i/><b>See it before you buy.</b><i/><b>Approve it. Then pay.</b></div></section>
+    <section className="trust-strip"><div className="trust-marquee" aria-hidden="true"><div className="trust-marquee-track"><span>БЕЗ ПРЕДОПЛАТЫ ✳ СНАЧАЛА ГОТОВЫЙ САЙТ ✳ ОПЛАТА ПОСЛЕ ОДОБРЕНИЯ ✳ БЕЗ ПРЕДОПЛАТЫ ✳ СНАЧАЛА ГОТОВЫЙ САЙТ ✳ ОПЛАТА ПОСЛЕ ОДОБРЕНИЯ ✳</span><span>БЕЗ ПРЕДОПЛАТЫ ✳ СНАЧАЛА ГОТОВЫЙ САЙТ ✳ ОПЛАТА ПОСЛЕ ОДОБРЕНИЯ ✳ БЕЗ ПРЕДОПЛАТЫ ✳ СНАЧАЛА ГОТОВЫЙ САЙТ ✳ ОПЛАТА ПОСЛЕ ОДОБРЕНИЯ ✳</span></div></div><div className="container trust-strip-inner"><span>НАШЕ ОБЕЩАНИЕ</span><b>Без предоплаты.</b><i/><b>Сначала увидьте результат.</b><i/><b>Одобрите — затем оплатите.</b></div></section>
 
-    <section className="section-pad intro-section"><div className="container intro-grid"><span className="eyebrow">01 / A DIFFERENT APPROACH</span><div><h2>Why pay for a website<br/><span className="muted">you haven’t even seen?</span></h2><p>Traditional web design asks you to pay before you know exactly what you’ll get. We do it differently. We create your website, show you the result and give you the opportunity to review it before payment.</p><Link href="/contact" className="text-link">Start with no upfront payment <span>→</span></Link></div></div></section>
+    <section className="section-pad intro-section"><div className="container intro-grid"><span className="eyebrow">01 / ДРУГОЙ ПОДХОД</span><div><h2>Зачем платить за сайт,<br/><span className="muted">который вы ещё не видели?</span></h2><p>При обычной разработке вы платите, ещё не зная, каким будет результат. Мы работаем иначе: сначала создаём сайт, показываем его вам и даём возможность всё проверить до оплаты.</p><Link href="/contact" className="text-link">Начать без предоплаты <span>→</span></Link></div></div></section>
 
-    <section className="how-section section-pad"><div className="container"><SectionHeading eyebrow="02 / SIMPLE BY DESIGN" title="From first idea to your approval." text="A straightforward process. No upfront payment. No guessing what the final website will look like."/><div className="steps-grid"><article><span>01</span><div className="step-icon">↗</div><h3>Tell us what you need</h3><p>Share your business, goals and the kind of website you have in mind.</p></article><article><span>02</span><div className="step-icon">◈</div><h3>We build your website</h3><p>We design and develop a tailored website around your business.</p></article><article><span>03</span><div className="step-icon">◎</div><h3>Review the result</h3><p>Explore the finished website and request agreed refinements.</p></article><article><span>04</span><div className="step-icon">✓</div><h3>Approve, then pay</h3><p>When you’re happy and approve the result, payment is due.</p></article></div></div></section>
+    <section className="how-section section-pad"><div className="container"><SectionHeading eyebrow="02 / ПРОСТОЙ ПРОЦЕСС" title="От первой идеи до вашего одобрения." text="A straightforward process. Без предоплаты. No guessing what the final website will look like."/><div className="steps-grid"><article><span>01</span><div className="step-icon">↗</div><h3>Расскажите о задаче</h3><p>Расскажите о бизнесе, целях и о том, каким вы видите свой сайт.</p></article><article><span>02</span><div className="step-icon">◈</div><h3>Мы создаём ваш сайт</h3><p>Разрабатываем дизайн и сайт с учётом особенностей вашего бизнеса.</p></article><article><span>03</span><div className="step-icon">◎</div><h3>Оцените результат</h3><p>Посмотрите готовый сайт и предложите согласованные правки.</p></article><article><span>04</span><div className="step-icon">✓</div><h3>Одобрите — затем оплатите</h3><p>Оплата производится только после того, как вы одобрите результат.</p></article></div></div></section>
 
-    <section className="services-section section-pad"><div className="container"><SectionHeading eyebrow="03 / WHAT WE DO" title="Everything your digital presence needs." text="A connected set of services to help your business look better, work smarter and grow."/><div className="service-grid service-grid-new">{services.map(([num,title,desc,href,icon])=><Link href={href} className="service-card service-card-new" key={num}><span className="service-number">{num}</span><div className="service-icon">{icon}</div><div><h3>{title}</h3><p>{desc}</p></div><span className="arrow-circle">↗</span></Link>)}</div></div></section>
+    <section className="services-section section-pad"><div className="container"><SectionHeading eyebrow="03 / ЧТО МЫ ДЕЛАЕМ" title="Всё необходимое для вашего присутствия в интернете." text="Комплекс цифровых услуг, который помогает бизнесу выглядеть профессионально и расти."/><div className="service-grid service-grid-new">{services.map(([num,title,desc,href,icon])=><Link href={href} className="service-card service-card-new" key={num}><span className="service-number">{num}</span><div className="service-icon">{icon}</div><div><h3>{title}</h3><p>{desc}</p></div><span className="arrow-circle">↗</span></Link>)}</div></div></section>
 
-    <section className="feature-section section-pad"><div className="container feature-grid"><div className="feature-art feature-art-new"><div className="process-board"><div className="board-top"><span>PROJECT WORKSPACE</span><b>IN PROGRESS <i/></b></div><div className="board-title">Your idea,<br/><em>taking shape.</em></div><div className="board-progress"><span>DESIGN</span><i><b/></i><strong>READY FOR REVIEW</strong></div><div className="board-cards"><div><small>01 / STRUCTURE</small><b>Clear direction</b></div><div><small>02 / VISUALS</small><b>Made for you</b></div><div><small>03 / BUILD</small><b>Ready to review</b></div></div></div><div className="feature-stamp">NO<br/>UPFRONT<span>✓</span></div></div><div className="feature-copy"><span className="eyebrow">04 / THE TOLVYXO DIFFERENCE</span><h2>See what you’re getting. Before you pay.</h2><p>We believe good work should speak for itself. That’s why our website process puts the finished result in front of you before payment is due.</p><ul className="check-list"><li>We agree on the scope before work begins</li><li>You get to review the completed website</li><li>Payment is due only after your approval</li><li>Domain, hosting and paid third-party services are separate where applicable</li></ul><Link href="/contact" className="text-link">Let’s discuss your website <span>→</span></Link></div></div></section>
+    <section className="feature-section section-pad"><div className="container feature-grid"><div className="feature-art feature-art-new"><div className="process-board"><div className="board-top"><span>PROJECT WORKSPACE</span><b>IN PROGRESS <i/></b></div><div className="board-title">Your idea,<br/><em>taking shape.</em></div><div className="board-progress"><span>DESIGN</span><i><b/></i><strong>READY FOR REVIEW</strong></div><div className="board-cards"><div><small>01 / STRUCTURE</small><b>Clear direction</b></div><div><small>02 / VISUALS</small><b>Made for you</b></div><div><small>03 / BUILD</small><b>Ready to review</b></div></div></div><div className="feature-stamp">NO<br/>UPFRONT<span>✓</span></div></div><div className="feature-copy"><span className="eyebrow">04 / ПРЕИМУЩЕСТВО TOLVYXO</span><h2>Сначала увидьте результат. Потом платите.</h2><p>Мы уверены, что качество работы говорит само за себя. Поэтому вы сначала видите готовый сайт, а уже потом принимаете решение об оплате.</p><ul className="check-list"><li>До начала работы согласовываем объём и задачи</li><li>Вы проверяете готовый сайт</li><li>Оплата — только после вашего одобрения</li><li>Домен, хостинг и платные сторонние сервисы оплачиваются отдельно, если применимо</li></ul><Link href="/contact" className="text-link">Обсудить ваш сайт <span>→</span></Link></div></div></section>
 
-    <section className="work-section section-pad"><div className="container"><SectionHeading eyebrow="05 / THE WORK" title="Thoughtful digital experiences." text="A preview of the design quality and direction we aim to bring to every project."/><div className="work-grid"><Link href="/portfolio" className="work-card"><div className="work-visual visual-one"><div className="mock-browser"><div className="browser-dots"><i/><i/><i/></div><div className="mock-title">A clearer<br/><em>way forward.</em></div><div className="mock-button">DISCOVER MORE ↗</div><div className="mock-shape"/></div></div><div className="work-meta"><div><h3>Digital experiences</h3><p>Web design · Development</p></div><span>↗</span></div></Link><Link href="/portfolio" className="work-card"><div className="work-visual visual-two"><div className="brand-poster"><span>FORM / FUNCTION</span><b>Make<br/>it matter.</b><i>BRAND SYSTEM — 2026</i></div></div><div className="work-meta"><div><h3>Brand systems</h3><p>Identity · Art direction</p></div><span>↗</span></div></Link></div><p className="demo-note">Concept visuals shown for presentation purposes, not completed client projects.</p></div></section>
+    <section className="work-section section-pad"><div className="container"><SectionHeading eyebrow="05 / ПОРТФОЛИО" title="Продуманные цифровые решения." text="Примеры визуального направления и качества, к которому мы стремимся в каждом проекте."/><div className="work-grid"><Link href="/portfolio" className="work-card"><div className="work-visual visual-one"><div className="mock-browser"><div className="browser-dots"><i/><i/><i/></div><div className="mock-title">Понятный<br/><em>путь вперёд.</em></div><div className="mock-button">ПОДРОБНЕЕ ↗</div><div className="mock-shape"/></div></div><div className="work-meta"><div><h3>Цифровые решения</h3><p>Веб-дизайн · Разработка</p></div><span>↗</span></div></Link><Link href="/portfolio" className="work-card"><div className="work-visual visual-two"><div className="brand-poster"><span>FORM / FUNCTION</span><b>Создавайте<br/>значимое.</b><i>ФИРМЕННЫЙ СТИЛЬ — 2026</i></div></div><div className="work-meta"><div><h3>Фирменный стиль</h3><p>Айдентика · Арт-дирекшн</p></div><span>↗</span></div></Link></div><p className="demo-note">Концепты для демонстрации возможностей, а не завершённые клиентские проекты.</p></div></section>
 
-    <section className="promise-banner"><div className="container promise-inner"><span className="eyebrow eyebrow-light">THE TOLVYXO PROMISE</span><h2>Good work earns your trust.<br/><em>Not an upfront invoice.</em></h2><p>Get your website designed and built first. Pay only after you’ve reviewed and approved the result.</p><Link href="/contact" className="button button-white">Start your free website <span>↗</span></Link><div className="promise-ring"/></div></section>
+    <section className="promise-banner"><div className="container promise-inner"><span className="eyebrow eyebrow-light">НАШЕ ОБЕЩАНИЕ</span><h2>Доверие начинается с результата.<br/><em>А не с предоплаты.</em></h2><p>Сначала мы создаём сайт. Вы проверяете его и платите только после одобрения.</p><Link href="/contact" className="button button-white">Заказать сайт без предоплаты <span>↗</span></Link><div className="promise-ring"/></div></section>
   </>;
 }
