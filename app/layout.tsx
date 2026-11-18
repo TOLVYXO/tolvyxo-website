@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   description: "TOLVYXO is a digital agency creating high-performing websites, thoughtful digital experiences and growth systems for ambitious businesses.",
   openGraph: {
     title: "TOLVYXO — Design. Develop. Scale.",
-    description: "Websites built first. Pay only after you approve the result.",
+    description: "Custom websites built before payment. Review your website and pay only after you approve the result.",
     type: "website"
   }
 };

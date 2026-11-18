@@ -30,26 +30,36 @@ export default function Home() {
             <span><i>✓</i> Your approval comes first</span>
           </div>
         </div>
-        <div className="hero-showcase">
-          <div className="showcase-backdrop"></div>
-          <div className="showcase-window">
-            <div className="window-bar"><div className="window-dots"><i/><i/><i/></div><span>YOURBUSINESS.COM</span><b>↗</b></div>
-            <div className="showcase-site">
-              <div className="site-nav"><b>YOUR BRAND<span>.</span></b><div><i/><i/><i/></div><strong>LET’S TALK ↗</strong></div>
-              <div className="site-content"><small>MADE FOR WHAT’S NEXT</small><h2>Make your<br/><em>business</em><br/>stand out.</h2><p>A clear message. A beautiful experience.<br/>A website built to move you forward.</p><span>DISCOVER MORE&nbsp; ↗</span></div>
-              <div className="site-art"><div className="art-disc"/><div className="art-tile">01<br/><b>CREATE<br/>IMPACT.</b></div></div>
-              <div className="site-bottom"><span>DESIGN / DEVELOPMENT</span><span>SCROLL TO EXPLORE ↓</span></div>
+        <div className="hero-showcase motion-showcase">
+          <div className="motion-halo halo-a"></div><div className="motion-halo halo-b"></div>
+          <div className="motion-browser browser-main">
+            <div className="motion-browser-bar"><div className="motion-dots"><i/><i/><i/></div><span>YOURBUSINESS.COM</span><b>↗</b></div>
+            <div className="motion-site">
+              <div className="motion-site-nav"><b>YOUR BRAND<span>.</span></b><div><i/><i/><i/></div><strong>LET’S TALK ↗</strong></div>
+              <div className="motion-site-body"><small>MADE FOR WHAT’S NEXT</small><h2>Make your<br/><em>business</em><br/>stand out.</h2><p>A clear message. A beautiful experience.<br/>A website built to move you forward.</p><span>DISCOVER MORE&nbsp; ↗</span></div>
+              <div className="motion-site-art"><div className="motion-sphere"></div><div className="motion-art-card">01<br/><b>CREATE<br/>IMPACT.</b></div></div>
+              <div className="motion-site-footer"><span>DESIGN / DEVELOPMENT</span><span>SCROLL TO EXPLORE ↓</span></div>
             </div>
           </div>
-          <div className="float-note float-note-top"><span className="float-check">✓</span><div><b>Built before payment</b><small>See your website first</small></div></div>
-          <div className="float-note float-note-bottom"><span className="float-spark">✳</span><div><b>Your approval matters</b><small>Pay only when you’re happy</small></div></div>
-          <div className="showcase-caption">A BETTER WAY TO BUILD YOUR ONLINE PRESENCE / 001</div>
+          <div className="motion-code-card">
+            <div className="motion-card-head"><span><i/> LIVE PREVIEW</span><b>● BUILDING</b></div>
+            <div className="code-lines"><i><b>01</b><span><em>const</em> website = {'{'}</span></i><i><b>02</b><span> design: <strong>"made for you"</strong>,</span></i><i><b>03</b><span> performance: <strong>"optimised"</strong>,</span></i><i><b>04</b><span> experience: <strong>"effortless"</strong></span></i><i><b>05</b><span>{'}'}</span></i></div>
+            <div className="code-progress"><span></span></div>
+          </div>
+          <div className="motion-score-card">
+            <div className="score-top"><span>SEO PERFORMANCE</span><b>↗</b></div>
+            <div className="score-number"><strong className="count-up">98</strong><small>/100</small></div>
+            <div className="score-bars"><i/><i/><i/><i/><i/><i/><i/><i/><i/><i/></div>
+            <small>READY TO GET DISCOVERED</small>
+          </div>
+          <div className="motion-approval"><span className="approval-check">✓</span><div><b>Ready for your review</b><small>Approve it. Then pay.</small></div><span className="approval-pulse"></span></div>
+          <div className="showcase-caption">DESIGN / DEVELOPMENT / GROWTH — 001</div>
         </div>
       </div>
       <div className="container hero-bottom"><span>SCROLL TO EXPLORE</span><span className="scroll-line"/></div>
     </section>
 
-    <section className="trust-strip"><div className="container trust-strip-inner"><span>THE TOLVYXO PROMISE</span><b>No upfront payment.</b><i/><b>See it before you buy.</b><i/><b>Approve it. Then pay.</b></div></section>
+    <section className="trust-strip"><div className="trust-marquee" aria-hidden="true"><div className="trust-marquee-track"><span>NO UPFRONT PAYMENT ✳ SEE IT BEFORE YOU BUY ✳ APPROVE IT, THEN PAY ✳ NO UPFRONT PAYMENT ✳ SEE IT BEFORE YOU BUY ✳ APPROVE IT, THEN PAY ✳</span><span>NO UPFRONT PAYMENT ✳ SEE IT BEFORE YOU BUY ✳ APPROVE IT, THEN PAY ✳ NO UPFRONT PAYMENT ✳ SEE IT BEFORE YOU BUY ✳ APPROVE IT, THEN PAY ✳</span></div></div><div className="container trust-strip-inner"><span>THE TOLVYXO PROMISE</span><b>No upfront payment.</b><i/><b>See it before you buy.</b><i/><b>Approve it. Then pay.</b></div></section>
 
     <section className="section-pad intro-section"><div className="container intro-grid"><span className="eyebrow">01 / A DIFFERENT APPROACH</span><div><h2>Why pay for a website<br/><span className="muted">you haven’t even seen?</span></h2><p>Traditional web design asks you to pay before you know exactly what you’ll get. We do it differently. We create your website, show you the result and give you the opportunity to review it before payment.</p><Link href="/contact" className="text-link">Start with no upfront payment <span>→</span></Link></div></div></section>
 
