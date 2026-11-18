@@ -82,7 +82,7 @@
 
 /* Cinematic entrance inspired by the supplied Branfy reference */
 .intro-curtain{position:fixed;inset:0;z-index:9999;background:#0b0d14;display:flex;align-items:center;justify-content:center;flex-direction:column;overflow:hidden;animation:intro-curtain-exit 1.05s cubic-bezier(.76,0,.24,1) 1.48s forwards;pointer-events:none}
-.intro-curtain:after{content:"";position:absolute;left:-12%;right:-12%;height:17vh;bottom:-10vh;background:#0b0d14;border-radius:0 0 50% 50%;transform:scaleX(1.1);animation:intro-wave-up 1.05s cubic-bezier(.76,0,.24,1) 1.48s forwards}
+.intro-curtain:after{content:"";position:absolute;left:-12%;right:-12%;height:42vh;bottom:-38vh;background:#0b0d14;border-radius:50% 50% 0 0 / 28% 28% 0 0;transform:scaleX(1.2);animation:intro-wave-up 1.05s cubic-bezier(.76,0,.24,1) 1.48s forwards}
 .intro-emblem{width:138px;height:138px;position:relative;display:grid;place-items:center;animation:intro-emblem-exit .55s ease 1.43s forwards}
 .intro-ring{position:absolute;inset:0;border:3px solid transparent;border-top-color:#c4f52b;border-right-color:#c4f52b;border-bottom-color:#c4f52b;border-left-color:#c4f52b;border-radius:50%;clip-path:inset(0 0 0 0);transform:rotate(-90deg);animation:intro-ring-draw 1.05s cubic-bezier(.2,.7,.2,1) both}
 .intro-disc{width:96px;height:96px;border-radius:50%;background:#f4f3ef;display:grid;place-items:center;box-shadow:0 0 0 1px #ffffff30,inset 0 2px 5px #00000012;animation:intro-disc-pop .65s cubic-bezier(.2,.9,.25,1) .18s both}
@@ -94,6 +94,6 @@
 @keyframes intro-wordmark-in{to{opacity:.9;letter-spacing:5px}}
 @keyframes intro-wordmark-out{to{opacity:0;transform:translateY(-10px)}}
 @keyframes intro-emblem-exit{to{opacity:0;transform:translateY(-45px) scale(.78)}}
-@keyframes intro-wave-up{0%{transform:translateY(0) scaleX(1.1)}100%{transform:translateY(-115vh) scaleX(1.1)}}
-@keyframes intro-curtain-exit{0%{clip-path:inset(0 0 0 0)}100%{clip-path:inset(0 0 100% 0)}}
+@keyframes intro-wave-up{0%{transform:translateY(0) scaleX(1.1);border-radius:0 0 50% 50% / 0 0 8% 8%}55%{transform:translateY(-55vh) scaleX(1.08);border-radius:0 0 50% 50% / 0 0 48% 48%}100%{transform:translateY(-125vh) scaleX(.72);border-radius:0 0 50% 50% / 0 0 50% 50%}}
+@keyframes intro-curtain-exit{0%{clip-path:inset(0 0 0 0 round 0 0 0 0);border-radius:0}38%{clip-path:inset(0 0 0 0 round 0 0 48% 48% / 0 0 17% 17%);border-radius:0 0 48% 48% / 0 0 17% 17%}72%{clip-path:inset(0 0 0 0 round 0 0 50% 50% / 0 0 38% 38%);border-radius:0 0 50% 50% / 0 0 38% 38%}100%{clip-path:inset(0 0 100% 0 round 0 0 50% 50% / 0 0 50% 50%);border-radius:0 0 50% 50% / 0 0 50% 50%}}
 @media(prefers-reduced-motion:reduce){.intro-curtain{display:none!important}}
