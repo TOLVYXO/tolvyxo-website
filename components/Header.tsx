@@ -6,8 +6,9 @@ export default function Header() {
   const [open, setOpen] = useState(false);
   const links = [
     ["Услуги", "/services/web-development"],
-    ["Портфолио", "/portfolio"],
-    ["О нас", "/about"]
+    ["Проекты", "/portfolio"],
+    ["О нас", "/about"],
+    ["Контакты", "/contact"]
   ];
   return (
     <header className="site-header">
@@ -16,7 +17,7 @@ export default function Header() {
           <span className="brand-mark"><span>T</span></span>
           <span className="brand-name">TOLVYXO<span className="brand-dot">.</span></span>
         </Link>
-        <button className="menu-toggle" onClick={() => setOpen(!open)} aria-label="Открыть меню" aria-expanded={open}>
+        <button className={open ? "menu-toggle is-open" : "menu-toggle"} onClick={() => setOpen(!open)} aria-label="Открыть меню" aria-expanded={open}>
           <span></span><span></span>
         </button>
         <nav className={open ? "nav-links is-open" : "nav-links"}>
