@@ -1,5 +1,7 @@
 import Link from "next/link";
 import SectionHeading from "@/components/SectionHeading";
+import DnaHelix from "@/components/DnaHelix";
+import ScrollStory from "@/components/ScrollStory";
 
 const services = [
   ["01", "Сайты для бизнеса", "Презентационные сайты, которые формируют доверие и приводят заявки.", "/services/web-development", "↗"],
@@ -32,17 +34,21 @@ export default function Home() {
           </div>
           <div className="hero-proof"><span className="proof-mark">✳</span><span>БЕЗ ПРЕДОПЛАТЫ</span><i/> <span>СНАЧАЛА ГОТОВЫЙ САЙТ</span><i/> <span>ОПЛАТА ПОСЛЕ ОДОБРЕНИЯ</span></div>
         </div>
-        <div className="hero-art" aria-label="Визуальная концепция цифрового проекта">
-          <div className="art-orbit orbit-a"/><div className="art-orbit orbit-b"/>
-          <div className="art-sun"/>
-          <div className="art-panel panel-back"><span>ЦИФРОВАЯ СРЕДА / 001</span><b>Идеи<br/>становятся<br/><em>реальностью.</em></b><i>DESIGN · DIGITAL · DEVELOPMENT</i></div>
-          <div className="art-panel panel-front"><div className="panel-top"><span>TOLVYXO®</span><span>СТУДИЯ / 2026</span></div><div className="panel-graphic"><div className="graphic-ring"/><div className="graphic-disc">T</div><span className="graphic-cross">✳</span></div><div className="panel-bottom"><b>Создаём<br/>для роста.</b><span>↗</span></div></div>
-          <div className="art-sticker"><b>0 €</b><span>ПРЕДОПЛАТЫ</span></div>
-          <div className="art-caption">T / 001 — DIGITAL EXPERIENCE</div>
+        <div className="hero-art hero-art-dna" aria-label="Анимированная спираль ДНК — символ технологий и развития">
+          <div className="dna-glow" />
+          <div className="dna-orbit dna-orbit-one" />
+          <div className="dna-orbit dna-orbit-two" />
+          <DnaHelix />
+          <div className="dna-label dna-label-top"><span className="dna-label-dot" /> DIGITAL DNA <b>01 / 04</b></div>
+          <div className="dna-label dna-label-bottom">DESIGN <i>×</i> TECHNOLOGY <i>×</i> GROWTH</div>
+          <div className="dna-float-card dna-card-one"><span>↗</span><div><b>Создаём рост</b><small>Цифровые решения</small></div></div>
+          <div className="dna-float-card dna-card-two"><span>✳</span><div><b>0 € предоплаты</b><small>Оплата после одобрения</small></div></div>
         </div>
       </div>
       <div className="container hero-bottom"><span>ЛИСТАЙТЕ, ЧТОБЫ УЗНАТЬ БОЛЬШЕ</span><span className="scroll-line"/><span>01 — 06</span></div>
     </section>
+
+    <ScrollStory />
 
     <section className="ticker"><div className="ticker-track"><span>СНАЧАЛА САЙТ ✳ ПОТОМ ОПЛАТА ✳ БЕЗ ПРЕДОПЛАТЫ ✳ ВЫ ОДОБРЯЕТЕ РЕЗУЛЬТАТ ✳ </span><span>СНАЧАЛА САЙТ ✳ ПОТОМ ОПЛАТА ✳ БЕЗ ПРЕДОПЛАТЫ ✳ ВЫ ОДОБРЯЕТЕ РЕЗУЛЬТАТ ✳ </span></div></section>
 

@@ -1,23 +1,26 @@
-# TOLVYXO — Russian website
+# TOLVYXO website
 
-Russian-first digital agency website built with Next.js.
+Russian-first Next.js website for TOLVYXO.
 
-## Design direction
-Warm ivory / charcoal / acid-lime editorial design, oversized typography, CSS motion, service grid, process, concept portfolio, FAQ, and the no-upfront-payment positioning.
+## Run locally
 
-## Important commercial wording
-The website states that development work has no upfront payment and is payable after approval. Domain, hosting, paid licences and third-party services may be billed separately when needed; this is disclosed on the homepage.
+- Node.js 20.9 or newer
+- `npm install`
+- `npm run dev`
 
-## Development
-`npm run dev`
+## Production build
 
-## Build
-`npm run build`
+- `npm run build`
 
-Portfolio visuals are clearly marked as demonstration concepts, not completed client work.
+## Deploy with Vercel
 
-## Security / runtime
-- Next.js pinned to `15.5.29` (patched 15.x maintenance line as of 18 Nov 2026).
-- React and React DOM pinned to `19.2.9`.
-- Node.js runtime requirement: `>=20.9.0`.
-- No lockfile was present in the source archive; Vercel will resolve dependencies from the pinned package versions on install and generate its deployment lock state.
+Import the GitHub repository and keep the framework preset as Next.js. Root Directory: `./`.
+
+## Motion update
+
+- Animated SVG DNA helix in the homepage hero (no Three.js dependency).
+- Floating information chips and orbital accents.
+- Scroll-reactive blue/lavender section with converging service nodes.
+- Reduced-motion preferences are respected.
+
+The main offer remains visible: no development prepayment; the client reviews the result and pays after approval. Domain, hosting and third-party paid services are separate where applicable.

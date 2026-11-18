@@ -1,4 +1,3 @@
-
 {
   "name": "tolvyxo-website",
   "version": "1.0.0",
@@ -24,4 +23,3 @@
     "node": ">=20.9.0"
   }
 }
-
