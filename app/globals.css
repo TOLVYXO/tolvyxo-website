@@ -70,3 +70,94 @@
 @media(max-width:900px){.scroll-story-inner{grid-template-columns:1fr;gap:0}.scroll-story-copy{max-width:650px}.story-orbit-stage{height:430px}.dna-label-top{right:2%}}
 @media(max-width:700px){.hero-art-dna{height:420px;min-height:420px;transform:none;margin:20px -12px -15px}.dna-helix-wrap{height:390px;width:300px}.dna-orbit-one{width:330px;height:140px}.dna-orbit-two{width:270px;height:220px}.dna-card-one{right:-1%;top:18%}.dna-card-two{left:0;bottom:14%}.dna-float-card{padding:9px 11px}.dna-float-card>span{width:27px;height:27px}.dna-label{font-size:6px}.scroll-story{padding:75px 0 25px;min-height:760px}.scroll-story-inner{min-height:650px}.scroll-story-copy h2{font-size:42px;letter-spacing:-2.3px}.scroll-story-copy p{font-size:13px}.story-orbit-stage{height:420px;transform:scale(.86);transform-origin:top center;margin:20px -25px -35px}.story-orbit-a{width:330px;height:330px}.story-orbit-b{width:260px;height:260px}.story-node{min-width:150px;padding:9px 10px;gap:7px}.story-node-icon{width:29px;height:29px}.story-node b{font-size:10px}.story-node em{font-size:7px}.story-node-1{left:-2%}.story-node-2{right:-2%}.story-node-3{left:-3%}.story-node-4{right:-3%}.scroll-story-bottom{width:calc(100% - 38px);font-size:6px;letter-spacing:1px}}
 @media(prefers-reduced-motion:reduce){.dna-helix-wrap,.dna-strand-a,.dna-strand-b,.dna-rungs,.dna-beads,.dna-glow,.dna-orbit,.dna-float-card,.story-core{animation:none!important}.story-node,.story-orbit,.scroll-story-copy{transition:none!important}}
+
+
+/* TOLVYXO — full-bleed editorial hero layout inspired by the supplied reference */
+:root{--ink:#111318;--muted:#777b86;--lime:#ff4b16;--paper:#f5f6f9;--paper2:#eceef3;--line:#dfe2e8;--white:#fff}
+body{background:#f5f6f9;color:#111318;font-family:'DM Sans',sans-serif}
+.site-header{height:48px;position:relative;top:auto;background:#f5f6f9;border:0;backdrop-filter:none}
+.site-header .nav-wrap{width:calc(100% - 5.2vw);max-width:none;margin:0 auto;display:flex;justify-content:space-between}
+.brand{display:none}
+.nav-links{display:flex;gap:5px;align-items:center}
+.nav-pill{display:inline-flex;align-items:center;padding:7px 13px;border-radius:24px;background:#e6e8ed;color:#252832;font-size:10px;font-weight:700;letter-spacing:1px;text-transform:uppercase;transition:.2s}
+.nav-pill:hover{background:#d9dce3;color:#111}
+.nav-pill-active{background:#111318;color:#fff}
+.nav-right{display:flex;align-items:center;gap:9px}
+.nav-language,.nav-social{display:grid;place-items:center;height:28px;min-width:28px;padding:0 9px;border-radius:20px;background:#e6e8ed;color:#17191f;font-size:10px;font-weight:700}
+.nav-cta{display:flex;align-items:center;gap:12px;padding:9px 17px;border-radius:24px;background:#ff4b16;color:#fff;font-size:10px;font-weight:800;letter-spacing:.8px;text-transform:uppercase}
+.nav-cta span{font-size:15px}
+.wordmark-band{width:calc(100% - 5.2vw);margin:0 auto 10px;overflow:hidden;line-height:.78}
+.wordmark{font:900 clamp(76px,10.1vw,196px)/.88 Manrope, sans-serif;letter-spacing:-.095em;white-space:nowrap;color:#111318;padding:0 0 .045em}
+.wordmark span{color:#ff4b16}
+.hero-dastum-layout{width:calc(100% - 5.2vw);max-width:none;min-height:0;margin:0 auto 0;border-radius:27px 27px 0 0;overflow:hidden;background:radial-gradient(ellipse at 76% 45%,#ff6b19 0%,#f94a0b 23%,transparent 48%),linear-gradient(105deg,#260804 0%,#4b1006 42%,#a52108 72%,#e83b08 100%);color:#fff}
+.hero-dastum-layout .hero-noise{opacity:.08}
+.hero-dastum-layout .hero-layout{width:min(1320px,calc(100% - 12vw));min-height:620px;grid-template-columns:1.08fr .92fr;gap:0;padding:0;align-items:center}
+.hero-dastum-layout .hero-copy{padding:82px 0 72px;max-width:690px;position:relative;z-index:3}
+.hero-kicker{display:inline-flex;padding:7px 12px;border-radius:30px;background:#ffffff25;color:#fff;font-size:10px;font-weight:800;letter-spacing:1.2px;margin-bottom:24px}
+.hero-dastum-layout h1{font:400 clamp(48px,5.4vw,88px)/.99 Manrope,sans-serif;letter-spacing:-.065em;margin:0 0 24px;color:#fff}
+.hero-dastum-layout h1 em{font-style:normal;color:#ffb08c}
+.hero-dastum-layout .hero-lead{max-width:590px;color:#f7d8cb;font-size:16px;line-height:1.62;margin:0}
+.hero-dastum-layout .hero-actions{margin-top:32px;gap:24px}
+.hero-dastum-layout .button{border-radius:28px;padding:18px 27px;font-size:14px;gap:22px}
+.hero-dastum-layout .button-primary{background:#ff4b16;color:#fff;box-shadow:none}
+.hero-dastum-layout .button-primary:hover{background:#ff6b32}
+.hero-dastum-layout .text-link{color:#fff}
+.hero-dastum-layout .text-link span{color:#ff9a70}
+.hero-art-dna{height:540px;min-width:0;position:relative;display:grid;place-items:center;overflow:visible}
+.hero-art-dna .dna-helix-wrap{width:min(100%,500px);height:540px;filter:drop-shadow(0 25px 40px #15050066)}
+.hero-art-dna .dna-helix{width:100%;height:100%;overflow:visible}
+.hero-art-dna .dna-strand{stroke-width:17}
+.hero-art-dna .dna-rungs line{stroke:#ffd5c0;stroke-width:4}
+.hero-art-dna .dna-beads circle{r:8}
+.dna-glow{position:absolute;width:440px;height:440px;border-radius:50%;background:radial-gradient(circle,#ffb17a88 0%,#ff6b2538 42%,transparent 70%);filter:blur(12px);animation:sun-pulse 6s ease-in-out infinite alternate}
+.dna-orbit{position:absolute;border:1px solid #ffd2bb88;border-radius:50%;pointer-events:none}
+.dna-orbit-one{width:470px;height:190px;transform:rotate(-28deg);animation:graphic-spin 28s linear infinite}
+.dna-orbit-two{width:390px;height:290px;transform:rotate(58deg);animation:graphic-spin 34s linear infinite reverse}
+.dna-label{position:absolute;color:#ffe0d1;font-size:8px;letter-spacing:1.6px;font-weight:700}
+.dna-label-top{top:8%;right:2%;display:flex;align-items:center;gap:8px}
+.dna-label-top b{margin-left:12px;color:#ffc0a3}
+.dna-label-bottom{bottom:8%;right:2%}
+.dna-label i{font-style:normal;color:#ff8a5a;padding:0 4px}
+.dna-label-dot{width:6px;height:6px;background:#ff9b71;border-radius:50%;box-shadow:0 0 12px #ffb08c}
+.dna-float-card{position:absolute;z-index:4;display:flex;align-items:center;gap:10px;padding:12px 15px;border:1px solid #ffffff42;border-radius:12px;background:#fff;color:#17191f;box-shadow:0 15px 35px #24090035;animation:browser-float 6s ease-in-out infinite}
+.dna-float-card>span{display:grid;place-items:center;width:32px;height:32px;border-radius:9px;background:#fff0e9;color:#f04a16;font-size:18px}
+.dna-float-card b{display:block;font-size:11px}
+.dna-float-card small{display:block;margin-top:3px;color:#777b86;font-size:9px}
+.dna-card-one{top:20%;left:-1%}
+.dna-card-two{bottom:17%;left:-6%;animation-delay:-2.7s}
+.hero-trust-strip{position:relative;z-index:2;min-height:54px;padding:0 2.7vw;border-top:1px solid #ffffff3d;display:flex;align-items:center;justify-content:space-between;gap:20px;color:#f5c4af;font-size:9px;font-weight:800;letter-spacing:1.1px}
+.hero-trust-strip span{white-space:nowrap}
+@media(max-width:900px){
+ .site-header{height:54px}.site-header .nav-wrap{width:calc(100% - 28px)}.nav-links{gap:4px}.nav-pill{font-size:8px;padding:7px 9px}.nav-right{gap:5px}.nav-language,.nav-social{display:none}.nav-cta{font-size:8px;padding:9px 11px}
+ .wordmark-band{width:calc(100% - 28px);margin-bottom:12px}.wordmark{font-size:clamp(64px,12vw,110px)}
+ .hero-dastum-layout{width:calc(100% - 28px);border-radius:20px 20px 0 0}
+ .hero-dastum-layout .hero-layout{width:calc(100% - 48px);grid-template-columns:1fr .85fr;min-height:560px}
+ .hero-dastum-layout .hero-copy{padding:65px 0}.hero-dastum-layout h1{font-size:clamp(44px,7vw,66px)}
+ .hero-art-dna{height:430px}.hero-art-dna .dna-helix-wrap{height:420px}.dna-orbit-one{width:330px}.dna-orbit-two{width:300px}.dna-glow{width:320px;height:320px}
+ .dna-card-one{left:-10%}.dna-card-two{left:-15%}
+}
+@media(max-width:620px){
+ .site-header{height:52px}.site-header .nav-wrap{width:calc(100% - 24px)}
+ .menu-toggle{display:flex;flex-direction:column;gap:5px;background:#e6e8ed;border:0;border-radius:50%;width:34px;height:34px;align-items:center;justify-content:center}
+ .menu-toggle span{display:block;width:14px;height:1.5px;background:#111}
+ .nav-links{display:none;position:absolute;top:48px;left:12px;right:12px;padding:12px;background:#fff;border:1px solid #e4e5e9;border-radius:14px;box-shadow:0 15px 35px #0002;flex-direction:column;align-items:stretch;z-index:60}
+ .nav-links.is-open{display:flex}.nav-pill{justify-content:center;font-size:10px;padding:11px}
+ .nav-cta{font-size:9px}
+ .wordmark-band{width:calc(100% - 24px);margin:4px auto 10px}.wordmark{font-size:17.2vw;letter-spacing:-.09em}
+ .hero-dastum-layout{width:calc(100% - 24px);border-radius:17px 17px 0 0}
+ .hero-dastum-layout .hero-layout{width:calc(100% - 38px);display:flex;flex-direction:column;min-height:0;align-items:stretch}
+ .hero-dastum-layout .hero-copy{padding:45px 0 10px}
+ .hero-kicker{font-size:8px;margin-bottom:17px}
+ .hero-dastum-layout h1{font-size:clamp(43px,11.5vw,62px);letter-spacing:-.07em;margin-bottom:17px}
+ .hero-dastum-layout .hero-lead{font-size:14px;line-height:1.55}
+ .hero-dastum-layout .hero-actions{margin-top:22px;gap:15px;flex-wrap:wrap}
+ .hero-dastum-layout .button{padding:15px 19px;font-size:12px}
+ .hero-art-dna{height:340px;margin-top:0}
+ .hero-art-dna .dna-helix-wrap{height:340px;width:100%}
+ .dna-orbit-one{width:290px;height:125px}.dna-orbit-two{width:260px;height:190px}.dna-glow{width:270px;height:270px}
+ .dna-card-one{top:13%;left:0}.dna-card-two{bottom:10%;left:0}
+ .dna-float-card{padding:8px 10px}.dna-float-card>span{width:26px;height:26px}.dna-float-card b{font-size:9px}.dna-float-card small{font-size:8px}
+ .dna-label-top{top:2%;right:0;font-size:7px}.dna-label-bottom{bottom:2%;right:0;font-size:7px}
+ .hero-trust-strip{padding:13px 17px;display:grid;grid-template-columns:1fr 1fr;gap:10px;font-size:7px;line-height:1.4}
+}
+@media(prefers-reduced-motion:reduce){.dna-glow,.dna-orbit,.dna-float-card{animation:none!important}}

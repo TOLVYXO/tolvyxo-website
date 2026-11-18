@@ -5,25 +5,28 @@ import { useState } from "react";
 export default function Header() {
   const [open, setOpen] = useState(false);
   const links = [
+    ["Главная", "/"],
     ["Услуги", "/services/web-development"],
     ["Проекты", "/portfolio"],
+    ["Цены", "/services/web-development#pricing"],
     ["О нас", "/about"],
     ["Контакты", "/contact"]
   ];
   return (
     <header className="site-header">
-      <div className="container nav-wrap">
-        <Link href="/" className="brand" aria-label="TOLVYXO — главная">
-          <span className="brand-mark"><span>T</span></span>
-          <span className="brand-name">TOLVYXO<span className="brand-dot">.</span></span>
-        </Link>
+      <div className="nav-wrap">
         <button className={open ? "menu-toggle is-open" : "menu-toggle"} onClick={() => setOpen(!open)} aria-label="Открыть меню" aria-expanded={open}>
           <span></span><span></span>
         </button>
         <nav className={open ? "nav-links is-open" : "nav-links"}>
-          {links.map(([label, href]) => <Link key={label} href={href} onClick={() => setOpen(false)}>{label}</Link>)}
-          <Link href="/contact" className="nav-cta" onClick={() => setOpen(false)}>Обсудить проект <span>↗</span></Link>
+          {links.map(([label, href], i) => <Link key={label} href={href} className={i === 0 ? "nav-pill nav-pill-active" : "nav-pill"} onClick={() => setOpen(false)}>{label}</Link>)}
         </nav>
+        <div className="nav-right">
+          <span className="nav-language">RU⌄</span>
+          <Link href="/contact" className="nav-social" aria-label="Связаться в WhatsApp">◉</Link>
+          <Link href="/contact" className="nav-social" aria-label="Telegram">➤</Link>
+          <Link href="/contact" className="nav-cta">Оставить заявку <span>↗</span></Link>
+        </div>
       </div>
     </header>
   );

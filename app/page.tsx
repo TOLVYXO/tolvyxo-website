@@ -21,31 +21,35 @@ const faqs = [
 
 export default function Home() {
   return <>
-    <section className="hero">
+    <div className="wordmark-band" aria-label="TOLVYXO digital agency">
+      <div className="wordmark">TOLVY<span>XO</span></div>
+    </div>
+    <section className="hero hero-dastum-layout">
       <div className="hero-noise"/>
-      <div className="container hero-layout">
+      <div className="hero-layout">
         <div className="hero-copy">
-          <div className="eyebrow"><span className="status-dot"/> DIGITAL STUDIO · ЭСТОНИЯ И ЕВРОПА</div>
-          <h1>Сайты, которые<br/><em>работают</em> на ваш<br/>бизнес<span className="lime-dot">.</span></h1>
-          <p className="hero-lead">Создаём современные сайты и цифровые решения, которые помогают бизнесу выглядеть убедительно, привлекать клиентов и расти.</p>
+          <div className="hero-kicker">САЙТЫ ДЛЯ БИЗНЕСА · ЭСТОНИЯ И ЕВРОПА</div>
+          <h1>Создание и<br/>продвижение <em>сайтов</em></h1>
+          <p className="hero-lead">Создаём сайты, которые действительно помогают бизнесу привлекать клиентов. Лендинги, сайты компаний и интернет-магазины — с продуманным дизайном и удобной мобильной версией.</p>
           <div className="hero-actions">
-            <Link href="/contact" className="button button-primary">Обсудить проект <span>↗</span></Link>
-            <Link href="/services/web-development" className="text-link">Наши услуги <span>↗</span></Link>
+            <Link href="/contact" className="button button-primary">Оставить заявку <span>→</span></Link>
+            <Link href="/services/web-development" className="text-link">Посмотреть услуги <span>↗</span></Link>
           </div>
-          <div className="hero-proof"><span className="proof-mark">✳</span><span>БЕЗ ПРЕДОПЛАТЫ</span><i/> <span>СНАЧАЛА ГОТОВЫЙ САЙТ</span><i/> <span>ОПЛАТА ПОСЛЕ ОДОБРЕНИЯ</span></div>
         </div>
-        <div className="hero-art hero-art-dna" aria-label="Анимированная спираль ДНК — символ технологий и развития">
+        <div className="hero-art hero-art-dna" aria-label="Анимированная спираль ДНК">
           <div className="dna-glow" />
           <div className="dna-orbit dna-orbit-one" />
           <div className="dna-orbit dna-orbit-two" />
           <DnaHelix />
-          <div className="dna-label dna-label-top"><span className="dna-label-dot" /> DIGITAL DNA <b>01 / 04</b></div>
+          <div className="dna-label dna-label-top"><span className="dna-label-dot" /> TOLVYXO DIGITAL DNA <b>01 / 04</b></div>
           <div className="dna-label dna-label-bottom">DESIGN <i>×</i> TECHNOLOGY <i>×</i> GROWTH</div>
           <div className="dna-float-card dna-card-one"><span>↗</span><div><b>Создаём рост</b><small>Цифровые решения</small></div></div>
           <div className="dna-float-card dna-card-two"><span>✳</span><div><b>0 € предоплаты</b><small>Оплата после одобрения</small></div></div>
         </div>
       </div>
-      <div className="container hero-bottom"><span>ЛИСТАЙТЕ, ЧТОБЫ УЗНАТЬ БОЛЬШЕ</span><span className="scroll-line"/><span>01 — 06</span></div>
+      <div className="hero-trust-strip">
+        <span>СНАЧАЛА ГОТОВЫЙ САЙТ</span><span>ОПЛАТА ПОСЛЕ ОДОБРЕНИЯ</span><span>0 € ПРЕДОПЛАТЫ ЗА РАЗРАБОТКУ</span><span>РАБОТАЕМ ПО ВСЕЙ ЕВРОПЕ</span>
+      </div>
     </section>
 
     <ScrollStory />
